@@ -1,1 +1,1 @@
-<template>vue1</template>
+<template><router-view /></template>
