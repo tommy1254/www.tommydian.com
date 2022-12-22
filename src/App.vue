@@ -1,3 +1,1 @@
-<template>
-  vue
-</template>
+<template>vue1</template>
