@@ -1,0 +1,50 @@
+{
+  "compilerOptions": {
+    "target": "ESNext", // 遵循es6版本 ESNext版本
+    "useDefineForClassFields": true,
+    "module": "ESNext", // 打包模块类型ESNext
+    "moduleResolution": "Node", // 按照node模块来解析
+    "strict": true, // 是否启动严格模式
+    "jsx": "preserve", // jsx 不转
+    "resolveJsonModule": true, // 解析json模块
+    "isolatedModules": true,
+    "esModuleInterop": true, // 支持es6,commonjs模块
+    "lib": [ // 编译时用的库
+      "ESNext",
+      "DOM"
+    ],
+    "noEmit": true,
+    "baseUrl": ".", // 解析非相对模块的基础地址，默认是当前目录
+    "paths": { // 路径映射，相对于baseUrl
+      "@/*": [
+        "src/*"
+      ],
+      "@api/*": [
+        "src/api/*"
+      ],
+      "@style/*": [
+        "src/style/*"
+      ],
+      "@utils/*": [
+        "src/utils/*"
+      ],
+      "@components/*": [
+        "src/components/*"
+      ],
+    }
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue"
+  ],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ],
+  "exclude": [ // 排除掉哪些类库
+    "node_modules",
+  ]
+}
