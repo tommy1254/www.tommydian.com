@@ -1,6 +1,7 @@
+import { resolve } from 'path'
 import { defineConfig, ConfigEnv, loadEnv } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import { resolve } from 'path'
+import { createSvgIconsPlugin } from "vite-plugin-svg-icons";
 // 支持 html 配置
 import { createHtmlPlugin } from 'vite-plugin-html'
 export default defineConfig(({ mode }: ConfigEnv) => {
@@ -19,6 +20,12 @@ export default defineConfig(({ mode }: ConfigEnv) => {
             title: title,
           },
         },
+      }),
+      createSvgIconsPlugin({
+        // 指定需要缓存的图标文件夹
+        iconDirs: [resolve(__dirname, "svgs")],
+        // 指定symbolId格式
+        symbolId: "lm-[dir]-[name]",
       }),
     ],
     server: {

@@ -9,7 +9,8 @@ import 'element-plus/dist/index.css'
 import router from '@/router';
 //全局组件
 import globalComp from '@components/global';
-
+//引入 svg 注册脚本
+import "virtual:svg-icons-register";
 var app = createApp(App);
 app.use(router)
 app.use(ElementPlus)
