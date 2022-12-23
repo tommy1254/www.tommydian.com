@@ -4,12 +4,20 @@
  * @Autor: 源
  * @Date: 2022-12-22 09:47:24
  * @LastEditors: 源
- * @LastEditTime: 2022-12-22 09:52:59
+ * @LastEditTime: 2022-12-22 13:57:05
  */
+import Layout from '@web/layout/index.vue';
 const webs = [
   {
-    path: '/',
-    component: () => import('@web/index.vue'),
+    path: "/",
+    component: Layout,
+    redirect: "/",
+    children: [
+      {
+        path: "/",
+        component: () => import("@web/index.vue"),
+      },
+    ],
   },
 ];
 export default webs;
