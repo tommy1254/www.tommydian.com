@@ -4,7 +4,7 @@
  * @Autor: 源
  * @Date: 2022-12-23 08:59:23
  * @LastEditors: 源
- * @LastEditTime: 2022-12-23 10:45:42
+ * @LastEditTime: 2022-12-24 14:28:55
  */
 import type { Component, App } from "vue";
 import Icon from './icon/index.vue';//svg
@@ -13,14 +13,14 @@ import Icon from './icon/index.vue';//svg
 const components: {
   [propName: string]: Component;
 } = {
-  Icon,
+  Icon, 
 };
 
 //安装
 export default {
   install: function (app: App<Element>) {
     Object.keys(components).forEach((item) => {
-      var comp:any = components[item]
+      var comp: any = components[item]
       app.component(comp.name, comp);
     })
   }
