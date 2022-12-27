@@ -46,7 +46,7 @@ export default defineConfig(({ mode }: ConfigEnv) => {
         '@api': resolve(__dirname, 'src/api'),
         '@components': resolve(__dirname, 'src/components'),
         '@admin': resolve(__dirname, 'src/admin'),
-        '@web': resolve(__dirname, 'src/web'),
+        '@blog': resolve(__dirname, 'src/blog'),
       }
     },
     esbuild: {

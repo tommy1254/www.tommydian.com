@@ -24,6 +24,6 @@ dist-ssr
 *.sw?
 /package-lock.json
 /src/assets/delimg
-/sass-web
-/sass-web.rar
+/tommydian
+/tommydian.rar
 /pnpm-lock.yaml

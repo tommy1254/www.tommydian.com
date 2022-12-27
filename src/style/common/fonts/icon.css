@@ -1,6 +1,6 @@
 @font-face {
   font-family: "lm"; /* Project id 2712935 */
-  src: url('iconfont.woff?t=1671780904989') format('woff');
+  src: url('iconfont.woff?t=1672018404922') format('woff');
 }
 
 .lm {
@@ -9,6 +9,10 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.lm-icon-search:before {
+  content: "\e7b3";
 }
 
 .lm-icon-menu:before {

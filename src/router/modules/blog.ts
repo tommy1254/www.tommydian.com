@@ -6,8 +6,8 @@
  * @LastEditors: 源
  * @LastEditTime: 2022-12-22 13:57:05
  */
-import Layout from '@web/layout/index.vue';
-const webs = [
+import Layout from '@blog/layout/index.vue';
+const blogs = [
   {
     path: "/",
     component: Layout,
@@ -15,9 +15,9 @@ const webs = [
     children: [
       {
         path: "/",
-        component: () => import("@web/index.vue"),
+        component: () => import("@blog/index.vue"),
       },
     ],
   },
 ];
-export default webs;
+export default blogs;
